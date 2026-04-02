@@ -32,52 +32,68 @@ class AppBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       heightFactor: 10.0,
-      child: PopupMenuButton<int>(
-        color: Colors.blueAccent, shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(5.0),),
-        offset: const Offset(30, 30), onSelected: (value) => _showSnackBar(context, "曲目$value個按鈕),
-        onCanceled: () =>_showSnackBar(context, "取消選擇"),
-        itemBuilder: (context) => const [
-          PopupMenuItem<int>(value: 1, child: Text("Body to Body", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 2, child: Text("Hooligan", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 3, child: Text("Aliens", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 4, child: Text("FYA", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 5, child: Text("2.0", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 6, child: Text("No. 29", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 7, child: Text("SWIM", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 8, child: Text("Merry Go Round", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 9, child: Text("NORMAL", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 10, child: Text("they don't know 'bout us", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 11, child: Text("One More Night", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 12, child: Text("Please", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-
-          PopupMenuItem<int>(value: 13, child: Text("Into the Sun", style: TextStyle(fontSize: 30.0)),),
-          PopupMenuDivider(),
-        ],),
-           ),
-        );
+      child: PopupMenuButton(
+        color: Colors.blueAccent, 
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: const Radius.circular(5.0)),),
+        offset: const Offset(30, 30), 
+        itemBuilder: (context) => <PopupMenuEntry<int>>[          
+          const PopupMenuItem<int>(
+            value: 1, 
+            child: Text("Body to Body", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 2, 
+            child: Text("Hooligan", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 3, 
+            child: Text("Aliens", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 4, 
+            child: Text("FYA", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 5, 
+            child: Text("2.0", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 6, 
+            child: Text("No. 29", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 7, 
+            child: Text("SWIM", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 8, 
+            child: Text("Merry Go Round", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 9, 
+            child: Text("NORMAL", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 10, 
+            child: Text("they don't know 'bout us", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 11, 
+            child: Text("One More Night", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 12, 
+            child: Text("Please", style: TextStyle(fontSize: 30.0)),),
+          const PopupMenuDivider(),
+          const PopupMenuItem<int>(
+            value: 13, 
+            child: Text("Into the Sun", style: TextStyle(fontSize: 30.0)),
+          ),
+        ],
+        onSelected: (value) => _showSnackBar(context, "曲目$value個按鈕"),
+        onOpened: () => _showSnackBar(context, "取消選擇"),
+      ),        
+    );
     
   }
 }
