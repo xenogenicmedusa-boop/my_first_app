@@ -39,59 +39,59 @@ class AppBody extends StatelessWidget {
         itemBuilder: (context) => <PopupMenuEntry<int>>[          
           const PopupMenuItem<int>(
             value: 1, 
-            child: Text("Body to Body", style: TextStyle(fontSize: 30.0)),),
+            child: Text("Body to Body", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 2, 
-            child: Text("Hooligan", style: TextStyle(fontSize: 30.0)),),
+            child: Text("Hooligan", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 3, 
-            child: Text("Aliens", style: TextStyle(fontSize: 30.0)),),
+            child: Text("Aliens", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 4, 
-            child: Text("FYA", style: TextStyle(fontSize: 30.0)),),
+            child: Text("FYA", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 5, 
-            child: Text("2.0", style: TextStyle(fontSize: 30.0)),),
+            child: Text("2.0", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 6, 
-            child: Text("No. 29", style: TextStyle(fontSize: 30.0)),),
+            child: Text("No. 29", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 7, 
-            child: Text("SWIM", style: TextStyle(fontSize: 30.0)),),
+            child: Text("SWIM", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 8, 
-            child: Text("Merry Go Round", style: TextStyle(fontSize: 30.0)),),
+            child: Text("Merry Go Round", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 9, 
-            child: Text("NORMAL", style: TextStyle(fontSize: 30.0)),),
+            child: Text("NORMAL", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 10, 
-            child: Text("they don't know 'bout us", style: TextStyle(fontSize: 30.0)),),
+            child: Text("they don't know 'bout us", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 11, 
-            child: Text("One More Night", style: TextStyle(fontSize: 30.0)),),
+            child: Text("One More Night", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 12, 
-            child: Text("Please", style: TextStyle(fontSize: 30.0)),),
+            child: Text("Please", style: TextStyle(fontSize: 20.0)),),
           const PopupMenuDivider(),
           const PopupMenuItem<int>(
             value: 13, 
-            child: Text("Into the Sun", style: TextStyle(fontSize: 30.0)),
+            child: Text("Into the Sun", style: TextStyle(fontSize: 20.0)),
           ),
         ],
-        onSelected: (value) => _showSnackBar(context, "曲目$value個按鈕"),
-        onOpened: () => _showSnackBar(context, "取消選擇"),
+        onSelected: (value) => _showSnackBar(context, "第$value首曲目"),
+        onOpened: () => _showSnackBar(context, "你取消了選擇"),
       ),        
     );
     

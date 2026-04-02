@@ -15,29 +15,29 @@ class AppBody extends StatelessWidget {
         ),
         offset: const Offset(100, 30),
         onSelected: (value) => _showSnackBar(context, "你選擇了第 $value 項"),
-        onOpened: () => _showSnackBar(context, "你取消了選擇"),
+        onCanceled: () => _showSnackBar(context, "你取消了選擇"),
         itemBuilder: (context) => <PopupMenuEntry<int>>[
           const PopupMenuItem<int>(
             value: 1,
             child: Text("第一項", style: TextStyle(fontSize: 20.0)),
           ),
-          const PopupMenuDivider(),
-          const PopupMenuItem<int>(
+          PopupMenuDivider(),
+          PopupMenuItem<int>(
             value: 2,
             child: Text("第二項", style: TextStyle(fontSize: 20.0)),
           ),
-          const PopupMenuDivider(),
-          const PopupMenuItem<int>(
+          PopupMenuDivider(),
+          PopupMenuItem<int>(
             value: 3,
             child: Text("第三項", style: TextStyle(fontSize: 20.0)),
           ),
-          const PopupMenuDivider(),
-          const PopupMenuItem<int>(
+          PopupMenuDivider(),
+          PopupMenuItem<int>(
             value: 3,
             child: Text("第四項", style: TextStyle(fontSize: 20.0)),
           ),
-          const PopupMenuDivider(),
-          const PopupMenuItem<int>(
+          PopupMenuDivider(),
+          PopupMenuItem<int>(
             value: 3,
             child: Text("第五項", style: TextStyle(fontSize: 20.0)),
           ),
