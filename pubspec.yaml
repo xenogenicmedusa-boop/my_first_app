@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  numberpicker: ^2.1.2
 
   fluttertoast: ^8.0.0
 
