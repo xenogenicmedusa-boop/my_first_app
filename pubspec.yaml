@@ -30,10 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
   numberpicker: ^2.1.2
-
   fluttertoast: ^8.0.0
+  photo_view: ^0.15.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -57,10 +56,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/images/thaoantran0101-flowers-7813838_1920.jpg
-    - assets/images/images.jpg
-    - assets/images/images-1.jpg
-    - assets/images/Snipaste_2026-03-31_15-49-56.png
+    - assets/images/
 
 
   # The following line ensures that the Material Icons font is
